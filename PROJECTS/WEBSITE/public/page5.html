@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos_Page_5</title>
+  <link rel="stylesheet" type="text/css" href="videos.css">
+  <link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<header class="welcome"><marquee width="500" align="center"><u><i>WELCOME TO DK VIDEOS</i></u></marquee></header>
+<body>
+<div class="wrapper">
+  <div class="btns">
+    <a href="index.html">Home</a>
+    <a href="page1.html">Videos</a>
+    <a href="about.html">About Us</a>
+  </div>
+</div>
+
+
+<!--21st Video-->
+<div>
+  <p class="text">Maadhavan Lyrical Video Whatsapp Status Yaar Azhaipathu from Maara......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Yaar_Azhaippadhu.mp4?alt=media&token=d9b562cc-85e1-43f1-95b8-52439b32267e" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Yaar_Azhaippadhu.mp4?alt=media&token=d9b562cc-85e1-43f1-95b8-52439b32267e" download="Yaar_Azhaippadhu">Download</a>
+  </div>
+</div>
+
+<!--22nd Video-->
+<div>
+  <p class="text">Vijay Lyrical Video Whatsapp Status Yaar Indha Saalai Oram from Thalaivaa......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Yaar_Indha_Saalai_Oram.mp4?alt=media&token=01693a0f-ae8f-40c0-8324-0b8238d6cd6b" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Yaar_Indha_Saalai_Oram.mp4?alt=media&token=01693a0f-ae8f-40c0-8324-0b8238d6cd6b" download="Yaar_Indha_Saalai_Oram">Download</a>
+  </div>
+</div>
+
+<!--23rd Video-->
+<div>
+  <p class="text">Ben 10 Mashup Video Whatsapp Status Binn Laden Vadivelu Comedy......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_10_Vadivelu_Version.mp4?alt=media&token=e46c4bde-15f3-4778-80e0-4560e39532eb" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_10_Vadivelu_Version.mp4?alt=media&token=e46c4bde-15f3-4778-80e0-4560e39532eb" download="Ben_10_Vadivelu_Version">Download</a>
+  </div>
+</div>
+
+<!--24th Video-->
+<div>
+  <p class="text">Ben 10 Mashup Video Whatsapp Status Mass Theme Music ......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Mass.mp4?alt=media&token=8bfbecdc-bacc-41ee-a3d1-373b8cbe8fde" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Mass.mp4?alt=media&token=8bfbecdc-bacc-41ee-a3d1-373b8cbe8fde" download="Ben_Mass">Download</a>
+  </div>
+</div>
+
+<!--25th Video-->
+<div>
+  <p class="text">Ben 10  Mashup Video Whatsapp Status Sachin Song......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Sachin.mp4?alt=media&token=390ba8f8-5911-41a9-9de1-392e264f07f1" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Sachin.mp4?alt=media&token=390ba8f8-5911-41a9-9de1-392e264f07f1" download="Ben_Sachin">Download</a>
+  </div>
+</div>
+
+
+<script>
+  const buttons = document.querySelectorAll("a") ;
+  buttons.forEach((button) => {
+    button.onclick = function(e)
+    {
+      let x = e.clientX - e.target.offsetLeft ;
+      let y = e.clientXY - e.target.offsetTop ;
+      let ripple = document.createElement("span");
+      ripple.style.left = `$(x)px` ;
+      ripple.style.top = `$(y)px` ;
+      this.appendChild(ripple) ;
+      setTimeout(function()
+      {
+        ripple.remove() ;
+      } , 600);
+    }
+  });
+
+  var page5 = document.querySelectorAll('video');
+  for(var i=0; i<page5.length; i++)
+    page5[i].addEventListener('play', function(){pauseAll(this)}, true);
+
+  function pauseAll(elem){
+    for(var i=0; i<page5.length; i++){
+      if(page5[i] == elem) continue;
+      if(page5[i].played.length > 0 && !page5[i].paused){
+        page5[i].pause();
+      }
+    }
+  }
+</script>
+
+
+<footer>
+  <div class="wrapper">
+    <div class="btns">
+      <a href="#">Back to Top</a>
+    </div>
+  </div>
+
+  <div class="bottomview">
+
+    <p class="bottomtext">Move to Page : </p>
+    <button title="1" ><a href="page1.html"/> 1 </button>
+    <button title="2" ><a href="page2.html"/> 2 </button>
+    <button title="3" ><a href="page3.html"/> 3</button>
+    <button title="4" ><a href="page4.html"/> 4</button>
+    <button title="5" ><a href="page5.html"/> 5</button>
+    <button title="6" ><a href="page6.html"/> 6</button>
+
+  </div>
+</footer>
+
+
+</body>
+</html>

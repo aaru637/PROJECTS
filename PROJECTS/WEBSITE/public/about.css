@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto: 100,200,300,400,500,600,700&display=swap');
+
+
+html , body
+{
+	display: grid;
+	place-items: center;
+	background: linear-gradient(-45deg , #FBEE97 , #ADEDD5 , #9896F0 , #FBC8D5 , #71C5EE , #025091);
+}
+
+@keyframes gradient {
+	0%
+	{
+		background-position: 0% 50%;
+	}
+
+	50%
+	{
+		background-position: 100% 50%;
+	}
+
+	100%
+	{
+		background-position: 0% 50%;
+	}
+
+}
+
+.welcome
+{
+	font-family: cursive;
+	font-size: 1em;
+	font-weight: bolder;
+	font-variant: inherit;
+	justify-content: safe center;
+	color: darkblue;
+	text-align: center;
+	padding-top: 25px;
+	font-variant-position: super;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: 'Roboto' , sans-serif;
+}
+
+
+.wrapper
+{
+	padding: 20px 30px;
+	align-items: center;
+}
+
+.wrapper .btns
+{text-align: center;
+	place-items: center;
+	align-items: center;
+	display: inline-flex;
+	margin: 30px 0 20px 0;
+}
+
+.btns a
+{
+	position: relative;
+	margin: 0 20px;
+	height: 40px;
+	width: 100px;
+	display: block;
+	line-height: 40px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 10px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	background: rgb(0, 157, 255);
+}
+
+
+.btns a > span
+{
+	position: absolute;
+	background: #fff;
+	transform: translate(-50% , -50%);
+	border-radius: 50%;
+	pointer-events: none;
+	animation: ripples 0.6s linear infinite;
+}
+
+@keyframes ripples{
+
+	0% {
+	width: 0px;
+	height: 0px;
+	opacity: 0.5;
+}
+	100% {
+	width: 500px;
+	height: 500px;
+	opacity: 0;
+}
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videos_Page_3</title>
+    <link rel="stylesheet" type="text/css" href="videos.css">
+    <link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<header class="welcome"><marquee width="500" align="center"><u><i>WELCOME TO DK VIDEOS</i></u></marquee></header>
+<body>
+<div class="wrapper">
+    <div class="btns">
+        <a href="index.html">Home</a>
+        <a href="page1.html">Videos</a>
+        <a href="about.html">About Us</a>
+    </div>
+</div>
+
+
+<!--11th Video-->
+<div>
+    <p class="text">HipHop Aadhi Lyrical Video Whatsapp Status Kaadhalithu from Meesaya Murukku......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Meesaya_Murukku.mp4?alt=media&token=d3705e2f-4930-4958-a22b-bd91ee700476" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Meesaya_Murukku.mp4?alt=media&token=d3705e2f-4930-4958-a22b-bd91ee700476" download="Meesaya_Murukku">Download</a>
+    </div>
+</div>
+
+<!--12th Video-->
+<div>
+    <p class="text">Harishkumar Lyrical EFX Video Whatsapp Status Title Track from Mudhal Nee Mudivum Nee......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Mudhal_Nee_Mudivum_Nee_EFX.mp4?alt=media&token=cab4d2f7-9ed1-47d4-b6b1-ef66ffd043b9" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Mudhal_Nee_Mudivum_Nee_EFX.mp4?alt=media&token=cab4d2f7-9ed1-47d4-b6b1-ef66ffd043b9" download="Mudhal_Nee_Mudivum_Nee_EFX">Download</a>
+    </div>
+</div>
+
+<!--13th Video-->
+<div>
+    <p class="text">Harishkumar Mashup Video Whatsapp Status Title Track from Mudhal Nee Mudivum Nee......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Mudhal_Nee_Mudivum%20_Nee.mp4?alt=media&token=0f9e88f0-7438-4e7c-aca6-8c0ca77d9511" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Mudhal_Nee_Mudivum%20_Nee.mp4?alt=media&token=0f9e88f0-7438-4e7c-aca6-8c0ca77d9511" download="Mudhal_Nee_Mudivum_Nee">Download</a>
+    </div>
+</div>
+
+<!--14th Video-->
+<div>
+    <p class="text">Karthik Lyrical Video Whatsapp Status Nadodi Paatu Paada from Harichandra......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Naadodi_Paatu.mp4?alt=media&token=a7ab112a-b2e2-47d6-a980-ea1889e53425" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Naadodi_Paatu.mp4?alt=media&token=a7ab112a-b2e2-47d6-a980-ea1889e53425" download="Naadodi_Paatu">Download</a>
+    </div>
+</div>
+
+<!--15th Video-->
+<div>
+    <p class="text">Aadhi Lyrical Video Whatsapp Status Nee Kavithaigala from Maragatha Naanayam......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Nee_Kavithaigala.mp4?alt=media&token=76994133-1744-4c04-bcf1-aaef4b8d56ba" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Nee_Kavithaigala.mp4?alt=media&token=76994133-1744-4c04-bcf1-aaef4b8d56ba" download="Nee_Kavithaigala">Download</a>
+    </div>
+</div>
+
+
+<script>
+    const buttons = document.querySelectorAll("a") ;
+    buttons.forEach((button) => {
+        button.onclick = function(e)
+        {
+            let x = e.clientX - e.target.offsetLeft ;
+            let y = e.clientXY - e.target.offsetTop ;
+            let ripple = document.createElement("span");
+            ripple.style.left = `$(x)px` ;
+            ripple.style.top = `$(y)px` ;
+            this.appendChild(ripple) ;
+            setTimeout(function()
+            {
+                ripple.remove() ;
+            } , 600);
+        }
+    });
+
+    var page3 = document.querySelectorAll('video');
+    for(var i=0; i<page3.length; i++)
+        page3[i].addEventListener('play', function(){pauseAll(this)}, true);
+
+    function pauseAll(elem){
+        for(var i=0; i<page3.length; i++){
+            if(page3[i] == elem) continue;
+            if(page3[i].played.length > 0 && !page3[i].paused){
+                page3[i].pause();
+            }
+        }
+    }
+</script>
+
+<footer>
+    <div class="wrapper">
+        <div class="btns">
+            <a href="#">Back to Top</a>
+        </div>
+    </div>
+
+    <div class="bottomview">
+
+        <p class="bottomtext">Move to Page : </p>
+        <button title="1" ><a href="page1.html"/> 1 </button>
+        <button title="2" ><a href="page2.html"/> 2 </button>
+        <button title="3" ><a href="page3.html"/> 3</button>
+        <button title="4" ><a href="page4.html"/> 4</button>
+        <button title="5" ><a href="page5.html"/> 5</button>
+        <button title="6" ><a href="page6.html"/> 6</button>
+
+    </div>
+</footer>
+
+</body>
+</html>

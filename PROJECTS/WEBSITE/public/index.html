@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+
+<header class="welcome"><marquee width="500" align="center"><u><i>WELCOME TO DK VIDEOS</i></u></marquee></header>
+<body>
+<div class="wrapper">
+	<div class="btns">
+		<a href="index.html">Home</a>
+		<a href="page1.html">Videos</a>
+		<a href="about.html">About Us</a>
+	</div>
+</div>
+
+<!--1st Image-->
+	<div class="image_container">
+		<img src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Images%2FBen.jpg?alt=media&token=2d2d6d6e-3a03-47fa-9487-371217ca9a5c" alt="Ben" title="Ben">
+	</div>
+
+<div class="text_container">
+	<p class="text">Ben 10 Mashup Video Toofan from KGF 2.....</p>
+</div>
+
+<div class="wrapper">
+	<div class="btns">
+		<a href="page6.html">Click Here</a>
+	</div>
+</div>
+
+<!--2nd Image-->
+<div class="image_container">
+	<img src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Images%2FRemo.jpg?alt=media&token=b19743c1-94d7-4ffe-ad96-0d59cf329f12" alt="Remo" title="Remo">
+</div>
+
+<div class="text_container">
+	<p class="text">Remo Mashup Video Whatsapp Status Kanmoodi Thirakkumbothu from Sachin.....</p>
+</div>
+
+<div class="wrapper">
+	<div class="btns">
+		<a href="page4.html">Click Here</a>
+	</div>
+</div>
+
+
+<script>
+	const buttons = document.querySelectorAll("a") ;
+	buttons.forEach((button) => {
+		button.onclick = function(e)
+		{
+			let x = e.clientX - e.target.offsetLeft ;
+			let y = e.clientXY - e.target.offsetTop ;
+			let ripple = document.createElement("span");
+			ripple.style.left = `$(x)px` ;
+			ripple.style.top = `$(y)px` ;
+			this.appendChild(ripple) ;
+			setTimeout(function()
+			{
+				ripple.remove() ;
+			} , 600);
+		}
+	});
+</script>
+</body>
+</html>

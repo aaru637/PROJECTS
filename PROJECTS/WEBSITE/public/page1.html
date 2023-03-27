@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Videos_Page_1</title>
+	<link rel="stylesheet" type="text/css" href="videos.css">
+	<link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<header class="welcome"><marquee width="500" align="center"><u><i>WELCOME TO DK VIDEOS</i></u></marquee></header>
+<body>
+	<div class="wrapper">
+<div class="btns">
+	<a href="index.html">Home</a>
+	<a href="page1.html">Videos</a>
+	<a href="about.html">About Us</a>
+</div>
+</div>
+	<!--1st Video-->
+	<div>
+		<p class="text">Surya Lyrical Video Whatsapp Status Aaagasam from Soorarai Pottru ......</p>
+	</div>
+
+	<div>
+		<video controls class="videos">
+			<source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Aagasam.mp4?alt=media&token=09f0b9dd-9cb7-481f-a877-6eb32aba4b9a" type="video/mp4" download>
+		</video>
+	</div>
+
+	<div class="wrapper">
+		<div class="btns">
+			<a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Aagasam.mp4?alt=media&token=09f0b9dd-9cb7-481f-a877-6eb32aba4b9a" download="Aagasam">Download</a>
+		</div>
+	</div>
+
+<!--	2nd Video-->
+	<div>
+		<p class="text">G.V.Prakash Lyrical Video Whatsapp Status Adiyae from Bachelor ......</p>
+	</div>
+
+	<div>
+		<video controls class="videos">
+			<source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Adiye.mp4?alt=media&token=682f5517-2113-44fe-9dd4-2be1e4f95211" type="video/mp4" download>
+		</video>
+	</div>
+
+	<div class="wrapper">
+		<div class="btns">
+			<a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Adiye.mp4?alt=media&token=682f5517-2113-44fe-9dd4-2be1e4f95211" download="Adiyae">Download</a>
+		</div>
+	</div>
+
+<!--	3rd Video-->
+	<div>
+		<p class="text">Dhanush Lyrical Video Whatsapp Status Annanai Thalattum from Maaran ......</p>
+	</div>
+
+	<div>
+		<video controls class="videos">
+			<source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Annana_Thalattum.mp4?alt=media&token=b1b0c91a-034d-4782-8c28-7273f61db8fb" type="video/mp4" download>
+		</video>
+	</div>
+
+	<div class="wrapper">
+		<div class="btns">
+			<a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Annana_Thalattum.mp4?alt=media&token=b1b0c91a-034d-4782-8c28-7273f61db8fb" download="Annana_Thalattum">Download</a>
+		</div>
+	</div>
+
+<!--	4th Video-->
+	<div>
+		<p class="text">Jeeva Lyrical Video Whatsapp Status Enai Saaithaalae from Endrendrum Punnagai ......</p>
+	</div>
+
+	<div>
+		<video controls class="videos">
+			<source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Enai_Saaithalae.mp4?alt=media&token=01733e07-2e3d-439c-964c-cc02731f8c18" type="video/mp4" download>
+		</video>
+	</div>
+
+	<div class="wrapper">
+		<div class="btns">
+			<a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Enai_Saaithalae.mp4?alt=media&token=01733e07-2e3d-439c-964c-cc02731f8c18" download="Enai_Saaithalae">Download</a>
+		</div>
+	</div>
+
+	<!--	5th Video-->
+	<div>
+		<p class="text">Gowtham Lyrical Video Whatsapp Status Medhakavitta from Ivan Thanthiran ......</p>
+	</div>
+
+	<div>
+		<video controls class="videos">
+			<source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ivan_Thanthiran.mp4?alt=media&token=92c9f04a-8ca5-4e43-b728-0bde3ed6d678" type="video/mp4" download>
+		</video>
+	</div>
+
+	<div class="wrapper">
+		<div class="btns">
+			<a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ivan_Thanthiran.mp4?alt=media&token=92c9f04a-8ca5-4e43-b728-0bde3ed6d678" download="Ivan_Thanthiran">Download</a>
+		</div>
+	</div>
+
+
+<script>
+	const buttons = document.querySelectorAll("a") ;
+	buttons.forEach((button) => {
+		button.onclick = function(e)
+		{
+			let x = e.clientX - e.target.offsetLeft ;
+			let y = e.clientXY - e.target.offsetTop ;
+			let ripple = document.createElement("span");
+			ripple.style.left = `$(x)px` ;
+			ripple.style.top = `$(y)px` ;
+			this.appendChild(ripple) ;
+			setTimeout(function()
+			{
+				ripple.remove() ;
+			} , 600);
+		}
+	});
+
+	var page1 = document.querySelectorAll('video');
+	for(var i=0; i<page1.length; i++)
+		page1[i].addEventListener('play', function(){pauseAll(this)}, true);
+
+	function pauseAll(elem){
+		for(var i=0; i<page1.length; i++){
+			if(page1[i] == elem) continue;
+			if(page1[i].played.length > 0 && !page1[i].paused){
+				page1[i].pause();
+		}
+	}
+  }
+</script>
+
+	<footer>
+		<div class="wrapper">
+			<div class="btns">
+				<a href="#">Back to Top</a>
+			</div>
+		</div>
+
+		<div class="bottomview">
+
+			<p class="bottomtext">Move to Page : </p>
+			<button title="1" ><a href="page1.html"/> 1 </button>
+			<button title="2" ><a href="page2.html"/> 2 </button>
+			<button title="3" ><a href="page3.html"/> 3</button>
+			<button title="4" ><a href="page4.html"/> 4</button>
+			<button title="5" ><a href="page5.html"/> 5</button>
+			<button title="6" ><a href="page6.html"/> 6</button>
+
+		</div>
+	</footer>
+</body>
+</html>

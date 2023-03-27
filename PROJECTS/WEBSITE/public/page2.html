@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videos_Page_2</title>
+    <link rel="stylesheet" type="text/css" href="videos.css">
+    <link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<header class="welcome"><marquee width="500" align="center"><u><i>WELCOME TO DK VIDEOS</i></u></marquee></header>
+<body>
+<div class="wrapper">
+    <div class="btns">
+        <a href="index.html">Home</a>
+        <a href="page1.html">Videos</a>
+        <a href="about.html">About Us</a>
+    </div>
+</div>
+
+
+<!--6th Video-->
+<div>
+    <p class="text">Naani Lyrical Video Whatsapp Status Kaadhal En Kaviyae from Salmon 3D......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kaadhal_En_Kaviyae.mp4?alt=media&token=bbbe67dd-3d21-43a6-893f-508f769b8181" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kaadhal_En_Kaviyae.mp4?alt=media&token=bbbe67dd-3d21-43a6-893f-508f769b8181" download="Kaadhal_En_Kaviyae">Download</a>
+    </div>
+</div>
+
+<!--7th Video-->
+<div>
+    <p class="text">Jayam Ravi Lyrical Video Whatsapp Status Kaadhal Vaithu from Deepavali......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kaadhal_Vaithu.mp4?alt=media&token=8d695701-70d6-489f-84a5-2fcf6a55fa35" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kaadhal_Vaithu.mp4?alt=media&token=8d695701-70d6-489f-84a5-2fcf6a55fa35" download="Kaadhal_Vaithu">Download</a>
+    </div>
+</div>
+
+<!--8th Video-->
+<div>
+    <p class="text">Remo Mashup Video Whatsapp Status Kaadhalai Solla Mudiyaatha from Galatta Kalyanam......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kadhalai_Solla_Remo.mp4?alt=media&token=1b50c6cf-9648-4b3e-8ecd-c6985170c515" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kadhalai_Solla_Remo.mp4?alt=media&token=1b50c6cf-9648-4b3e-8ecd-c6985170c515" download="Kadhalai_Solla_Remo">Download</a>
+    </div>
+</div>
+
+<!--9th Video-->
+<div>
+    <p class="text">Keerthy Suresh Lyrical Video Whatsapp Status Kalaavathi from Sarkaaru Vaari Paata......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kalaavathi.mp4?alt=media&token=67bd318b-bf55-4fd3-a1f8-bcd868fe7605" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Kalaavathi.mp4?alt=media&token=67bd318b-bf55-4fd3-a1f8-bcd868fe7605" download="Kalaavathi">Download</a>
+    </div>
+</div>
+
+<!--10th Video-->
+<div>
+    <p class="text">Ashok Selvan Lyrical Video Whatsapp Status Marapathillai from Oh my Kadavulae ......</p>
+</div>
+
+<div>
+    <video controls class="videos">
+        <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Marapathillai.mp4?alt=media&token=78d54a18-9f59-4c4f-8b5c-c84fc04851ac" type="video/mp4">
+    </video>
+</div>
+
+<div class="wrapper">
+    <div class="btns">
+        <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Marapathillai.mp4?alt=media&token=78d54a18-9f59-4c4f-8b5c-c84fc04851ac" download="Marapathillai">Download</a>
+    </div>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll("a") ;
+    buttons.forEach((button) => {
+        button.onclick = function(e)
+        {
+            let x = e.clientX - e.target.offsetLeft ;
+            let y = e.clientXY - e.target.offsetTop ;
+            let ripple = document.createElement("span");
+            ripple.style.left = `$(x)px` ;
+            ripple.style.top = `$(y)px` ;
+            this.appendChild(ripple) ;
+            setTimeout(function()
+            {
+                ripple.remove() ;
+            } , 600);
+        }
+    });
+
+    var page2 = document.querySelectorAll('video');
+    for(var i=0; i<page2.length; i++)
+        page2[i].addEventListener('play', function(){pauseAll(this)}, true);
+
+    function pauseAll(elem){
+        for(var i=0; i<page2.length; i++){
+            if(page2[i] == elem) continue;
+            if(page2[i].played.length > 0 && !page2[i].paused){
+                page2[i].pause();
+            }
+        }
+    }
+</script>
+
+<footer>
+    <div class="wrapper">
+        <div class="btns">
+            <a href="#">Back to Top</a>
+        </div>
+    </div>
+
+    <div class="bottomview">
+
+        <p class="bottomtext">Move to Page : </p>
+        <button title="1" ><a href="page1.html"/> 1 </button>
+        <button title="2" ><a href="page2.html"/> 2 </button>
+        <button title="3" ><a href="page3.html"/> 3</button>
+        <button title="4" ><a href="page4.html"/> 4</button>
+        <button title="5" ><a href="page5.html"/> 5</button>
+        <button title="6" ><a href="page6.html"/> 6</button>
+
+    </div>
+</footer>
+</body>
+</html>

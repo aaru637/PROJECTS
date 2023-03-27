@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos_Page_6</title>
+  <link rel="stylesheet" type="text/css" href="videos.css">
+  <link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<header class="welcome"><marquee width="500" align="center"><u><i>WELCOME TO DK VIDEOS</i></u></marquee></header>
+<body>
+<div class="wrapper">
+  <div class="btns">
+    <a href="index.html">Home</a>
+    <a href="page1.html">Videos</a>
+    <a href="about.html">About Us</a>
+  </div>
+</div>
+
+
+<!--26th Video-->
+<div>
+  <p class="text">Ben 10 Mashup Video Whatsapp Status Toofan from KGF 2......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Toofan.mp4?alt=media&token=049ae897-03c5-4099-960a-535eee9fe2be" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a id="toofan" href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Toofan.mp4?alt=media&token=049ae897-03c5-4099-960a-535eee9fe2be" download="Ben_Toofan">Download</a>
+  </div>
+</div>
+
+<!--27th Video-->
+<div>
+  <p class="text">Ben 10 Mashup Video Whatsapp Status Edhirthu Nil from Biriyani......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Edhirthu_Nil.mp4?alt=media&token=3272e5dd-b4a8-477f-98c0-eb7fe392343b" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Ben_Edhirthu_Nil.mp4?alt=media&token=3272e5dd-b4a8-477f-98c0-eb7fe392343b" download="Ben_Toofan">Download</a>
+  </div>
+</div>
+
+<!--28th Video-->
+
+<div>
+  <p class="text">Captain America MashUp Video Whatsapp Status Kalki Bgm......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Captain_America_Kalki.mp4?alt=media&token=6a7ac258-ee77-42bd-81fb-067e1caed3a8" type="video/mp4" download>
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Captain_America_Kalki.mp4?alt=media&token=6a7ac258-ee77-42bd-81fb-067e1caed3a8" download="Captain_America_Kalki">Download</a>
+  </div>
+</div>
+
+<!--29th Video-->
+
+<div>
+  <p class="text">Spider Man MashUp Video Whatsapp Status Kaakki Sattai ......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Spider_Man_Kaaki_Sattai.mp4?alt=media&token=68b67503-8696-450f-bc8d-03d3eb5da424" type="video/mp4" download>
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Spider_Man_Kaaki_Sattai.mp4?alt=media&token=68b67503-8696-450f-bc8d-03d3eb5da424" download="Spider_Man_Kaaki_Sattai">Download</a>
+  </div>
+</div>
+
+
+<script>
+  const buttons = document.querySelectorAll("a") ;
+  buttons.forEach((button) => {
+    button.onclick = function(e)
+    {
+      let x = e.clientX - e.target.offsetLeft ;
+      let y = e.clientXY - e.target.offsetTop ;
+      let ripple = document.createElement("span");
+      ripple.style.left = `$(x)px` ;
+      ripple.style.top = `$(y)px` ;
+      this.appendChild(ripple) ;
+      setTimeout(function()
+      {
+        ripple.remove() ;
+      } , 600);
+    }
+  });
+
+  var page6 = document.querySelectorAll('video');
+  for(var i=0; i<page6.length; i++)
+    page6[i].addEventListener('play', function(){pauseAll(this)}, true);
+
+  function pauseAll(elem){
+    for(var i=0; i<page1.length; i++){
+      if(page6[i] == elem) continue;
+      if(page6[i].played.length > 0 && !page6[i].paused){
+        page6[i].pause();
+      }
+    }
+  }
+</script>
+
+
+<footer>
+  <div class="wrapper">
+    <div class="btns">
+      <a href="#">Back to Top</a>
+    </div>
+  </div>
+
+  <div class="bottomview">
+
+    <p class="bottomtext">Move to Page : </p>
+    <button title="1" ><a href="page1.html"/> 1 </button>
+    <button title="2" ><a href="page2.html"/> 2 </button>
+    <button title="3" ><a href="page3.html"/> 3</button>
+    <button title="4" ><a href="page4.html"/> 4</button>
+    <button title="5" ><a href="page5.html"/> 5</button>
+    <button title="6" ><a href="page6.html"/> 6</button>
+
+  </div>
+</footer>
+
+</body>
+</html>

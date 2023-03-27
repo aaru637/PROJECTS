@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos_Page_4</title>
+  <link rel="stylesheet" type="text/css" href="videos.css">
+  <link rel="icon" href="Icon.ico" type="image/x-icon">
+</head>
+
+<header class="welcome"><marquee width="500" align="center"><u><i>WELCOME TO DK VIDEOS</i></u></marquee></header>
+<body>
+<div class="wrapper">
+  <div class="btns">
+    <a href="index.html">Home</a>
+    <a href="page1.html">Videos</a>
+    <a href="about.html">About Us</a>
+  </div>
+</div>
+
+
+<!--16th Video-->
+<div>
+  <p class="text">Remo Mashup Video Whatsapp Status Kanmoodi from Sachin......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Remo_Kanmoodi.mp4?alt=media&token=99924f83-3dc6-4c49-965d-c36cdb788fde" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Remo_Kanmoodi.mp4?alt=media&token=99924f83-3dc6-4c49-965d-c36cdb788fde" download="Remo_Kanmoodi">Download</a>
+  </div>
+</div>
+
+<!--17th Video-->
+<div>
+  <p class="text">Karthik Mashup Video Whatsapp Status Thuli Thuli from Paiya......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Thuli_Thuli.mp4?alt=media&token=622c0c4f-a3f2-47ac-82da-c202398609bd" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Thuli_Thuli.mp4?alt=media&token=622c0c4f-a3f2-47ac-82da-c202398609bd" download="Thuli_Thuli">Download</a>
+  </div>
+</div>
+
+<!--18th Video-->
+<div>
+  <p class="text">Manoj BharathiRaja Mashup Video Whatsapp Status Unakkaga from TajMahal......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Unakkaga.mp4?alt=media&token=b12bb146-cfa9-4609-afb1-4e7b9b448080" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Unakkaga.mp4?alt=media&token=b12bb146-cfa9-4609-afb1-4e7b9b448080" download="Unakkaga">Download</a>
+  </div>
+</div>
+
+<!--19th Video-->
+<div>
+  <p class="text">Udhaiyanidhi Stalin Mashup 3D Effect Video Whatsapp Status Venam Machan Venam from Oru Kal Oru Kannadi......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Venam_Machan_Venam.mp4?alt=media&token=f80e90b8-152a-471f-aa07-52f4ad7a69c6" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Venam_Machan_Venam.mp4?alt=media&token=f80e90b8-152a-471f-aa07-52f4ad7a69c6" download="Venam_Machan_Venam">Download</a>
+  </div>
+</div>
+
+<!--20th Video-->
+<div>
+  <p class="text">Atharvaa Mashup Video Whatsapp Status Vilambara Idaivelai from Imaikka Nodigal......</p>
+</div>
+
+<div>
+  <video controls class="videos">
+    <source src="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Vilambara_Idaivelai.mp4?alt=media&token=aa43cb4d-cc75-49d7-98e5-6dfb78a11bb0" type="video/mp4">
+  </video>
+</div>
+
+<div class="wrapper">
+  <div class="btns">
+    <a href="https://firebasestorage.googleapis.com/v0/b/alonevibes.appspot.com/o/Vilambara_Idaivelai.mp4?alt=media&token=aa43cb4d-cc75-49d7-98e5-6dfb78a11bb0" download="Vilambara_Idaivelai">Download</a>
+  </div>
+</div>
+
+
+<script>
+  const buttons = document.querySelectorAll("a") ;
+  buttons.forEach((button) => {
+    button.onclick = function(e)
+    {
+      let x = e.clientX - e.target.offsetLeft ;
+      let y = e.clientXY - e.target.offsetTop ;
+      let ripple = document.createElement("span");
+      ripple.style.left = `$(x)px` ;
+      ripple.style.top = `$(y)px` ;
+      this.appendChild(ripple) ;
+      setTimeout(function()
+      {
+        ripple.remove() ;
+      } , 600);
+    }
+  });
+
+  var page4 = document.querySelectorAll('video');
+  for(var i=0; i<page4.length; i++)
+    page4[i].addEventListener('play', function(){pauseAll(this)}, true);
+
+  function pauseAll(elem){
+    for(var i=0; i<page4.length; i++){
+      if(page4[i] == elem) continue;
+      if(page4[i].played.length > 0 && !page4[i].paused){
+        page4[i].pause();
+      }
+    }
+  }
+</script>
+
+<footer>
+  <div class="wrapper">
+    <div class="btns">
+      <a href="#">Back to Top</a>
+    </div>
+  </div>
+
+  <div class="bottomview">
+
+    <p class="bottomtext">Move to Page : </p>
+    <button title="1" ><a href="page1.html"/> 1 </button>
+    <button title="2" ><a href="page2.html"/> 2 </button>
+    <button title="3" ><a href="page3.html"/> 3</button>
+    <button title="4" ><a href="page4.html"/> 4</button>
+    <button title="5" ><a href="page5.html"/> 5</button>
+    <button title="6" ><a href="page6.html"/> 6</button>
+
+  </div>
+</footer>
+
+</body>
+</html>
